@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head > 
+    <title > Calculadora </title>  
+</head>
+<body style="background-color: rgb(1000, 500, 500);">
+    <h1 style="color:rgb(436, 86, 86)"> Calculadora </h1>
+<p1 style="color:seagreen"> CALCULADORA BASICA </p1> <br><br>
+<br><br>
+<p2> Ingrese un numero cualquiera futuro ingeniero</p2> 
+<p2> :D</p2> 
+<br><br>
+<label style="color:red">a : </label>
+<input id="en1" type="number" ><br><br>
+<label style="color:blue">b : </label>
+<input id="en2" type="number"><br><br>
+<button onclick="suma()" >a+b</button>
+<button onclick="resta()" >a-b</button>
+<button onclick="division()">a/b</button>
+<button onclick="producto()"> a*b </button>
+<p id="demo1"></p>
+<script>
+function suma(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a) + Number(b);
+}
+function division(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a)/Number(b);
+}
+function producto(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a)*Number(b);
+}
+function resta(){
+    a = document.getElementById("en1").value;
+    b = document.getElementById("en2").value;
+    document.getElementById("demo1").innerHTML = Number(a)-Number(b);
+}
+
+</script>
+</hmtl>
